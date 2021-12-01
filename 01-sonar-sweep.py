@@ -26,5 +26,3 @@ def solution_two():
             res += 1
         prev_window = window
     return res
-
-print(solution_two())
