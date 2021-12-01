@@ -5,7 +5,7 @@ PUZZLE_INPUT = os.path.join('.', 'puzzle-inputs', '01-sonar-sweep.txt')
 with open(PUZZLE_INPUT, 'r') as f:
     puzzle_input = f.read().splitlines() 
 
-puzzle_input = list(map(int, puzzle_input))
+puzzle_input = map(int, puzzle_input)
 
 
 def solution_one():
