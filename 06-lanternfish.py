@@ -8,7 +8,6 @@ with open(PUZZLE_INPUT, 'r') as f:
 
 fishes = list(map(int, puzzle_input))
 
-
 def count_fish(days):
     counter = [0 for _ in range(9)]
     for fish in fishes:
