@@ -12,7 +12,6 @@ def count_fish(days):
     counter = [0 for _ in range(9)]
     for fish in fishes:
         counter[fish] += 1
-        
     for _ in range(days):
         prev = 0
         for i in range(len(counter) - 1, -1, -1):
