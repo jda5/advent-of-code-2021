@@ -10,9 +10,7 @@ fishes = list(map(int, puzzle_input))
 
 
 def count_fish(days):
-
     counter = [0 for _ in range(9)]
-
     for fish in fishes:
         counter[fish] += 1
         
@@ -22,8 +20,6 @@ def count_fish(days):
             temp = counter[i]
             counter[i] = prev
             prev = temp
-
         counter[-1] = prev
         counter[6] += prev
-
     return sum(counter)
