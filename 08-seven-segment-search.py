@@ -1,5 +1,4 @@
 import os
-import statistics
 
 FILENAME = os.path.splitext(__file__)
 PUZZLE_INPUT = os.path.join('.', 'puzzle-inputs', f'{FILENAME[0]}.txt')
