@@ -33,11 +33,11 @@ def fold_paper(coordinates, axis, value):
 def view_paper(coordinates):
     max_row = max(coordinates, key=lambda x: x[0])[0]
     max_col = max(coordinates, key=lambda x: x[1])[1]
-    paper = [['.' for _ in range(max_row + 1)] for _ in range(max_col + 1)]
+    paper = [[' ' for _ in range(max_row + 1)] for _ in range(max_col + 1)]
     for row, col in coordinates:
         paper[col][row] = '#'
     for row in paper:
-        print(row)
+        print(''.join(row))
 
 def solution_one():
     axis, value = get_fold_line(instructions[0])
