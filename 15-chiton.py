@@ -57,5 +57,3 @@ def solution_two():
                 new_row.append(new_elem)
         full_cave.append(new_row)
     return solution_one(full_cave)
-
-print(solution_two())
